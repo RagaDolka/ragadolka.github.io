@@ -121,7 +121,7 @@ header .navbar {
 /************Главная************/
 
 #Каталог {
-	background: url(img/bg.jpg) no-repeat center center;
+	background: url(Каталог/img/bg.jpg) no-repeat center center;
     background-size: cover;
 	position: relative;
 	justify-content: center;
