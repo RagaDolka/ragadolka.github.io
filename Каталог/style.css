@@ -1,0 +1,329 @@
+/* Base CSS */
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 15px;
+}
+
+a:focus {
+	outline: 0 solid;
+}
+
+img {
+	max-width: 500px;
+	height: auto;
+}
+
+.fix {
+	overflow: hidden
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 15px;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+	height: 100%
+}
+
+a {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+	text-decoration: none
+}
+
+.btn-trans:focus {
+	outline: none;
+	color: #fff;
+
+}
+
+/******************** NAVBAR CSS *************/
+header .navbar {
+	border-radius: 0px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > li > a:hover {
+	background: none;
+}
+
+.navbar-inverse {
+	background: rgba(0, 0, 0, 0.65) !important;
+}
+
+#myNavbar ul li {
+	padding: 40px 30px 30px;
+	text-transform: uppercase;
+}
+
+#myNavbar ul li.active a {
+	color: #EB0000;
+}
+
+#myNavbar ul li.active > a::after {
+	content: "";
+	position:absolute;
+	width: 100%;
+	left: 0;
+	border-bottom: 2px solid #EB0000;
+	bottom: 0;
+	transition: all 0.2s;
+}
+
+#myNavbar ul li a {
+	border-bottom: 2px solid transparent;
+}
+
+.navbar-inverse #myNavbar li:hover a::after, #myNavbar ul li a:hover {
+	border-bottom: 2px solid #EB0000;
+	color: #EB0000;
+}
+
+#myNavbar ul li a {
+	padding: 0 0 5px;
+	font-size: 24px;
+	color: #fff;
+	transition: all 0.2s ease-in 0.2s;
+}
+
+header .navbar-brand {
+	padding: 28px 15px;
+}
+
+header .navbar {
+	margin-bottom: 0;
+}
+
+/************Главная************/
+
+#Каталог {
+	background: url(img/bg.jpg) no-repeat center center;
+    background-size: cover;
+	position: relative;
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+    height:inherit;
+	
+}
+
+.home-text {
+	text-transform: uppercase;
+	color: #fff;
+
+}
+
+.home-text h1 {
+	font-size: 115px;
+	color: #fff;
+	font-weight: 500;
+
+}
+
+.home-text h3 {
+	padding: 10px;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.home-text span {
+	color: #f20101;
+	font-weight: 700;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(217, 217, 217, 0.5);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/****************/
+.carousel-indicators li {
+	width: 110px;
+	height: 10px;
+	background-color: #fff;
+	border: 1px solid;
+	border-radius: 0;
+}
+
+.carousel-indicators li.active {
+	background-color: #000;
+	width: 110px;
+	height: 10px;
+}
+
+.carousel-indicators {
+	bottom: -240px !important;
+}
+
+
+
+
+
+* {box-sizing: border-box;}
+.f1 {
+  position:absolute;
+    width: 150px;
+    right: 100px;
+	left: auto;
+	border-bottom: 2px solid #EB0000;
+	bottom: 25px;
+	transition: all 0.2s;
+  margin: 0 0 0px;
+}
+
+
+
+
+input, .search {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  background: #fff;
+  padding-left: 15px;
+}
+.search {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #EB0000;
+  cursor: pointer;
+}
+.search:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+
+
+
+#list ul li {
+	padding: 40px 30px 30px;
+	text-transform: uppercase;
+}
+
+#list ul li.active a {
+	color: #EB0000;
+}
+
+#list ul li.active > a::after {
+	content: "";
+	position:absolute;
+	width: 100%;
+	left: 0;
+	border-bottom: 2px solid #EB0000;
+	bottom: 0;
+	transition: all 0.2s;
+}
+
+#list ul li a {
+	border-bottom: 2px solid transparent;
+}
+
+.navbar-inverse #list li:hover a::after, #myNavbar ul li a:hover {
+	border-bottom: 2px solid #EB0000;
+	color: #EB0000;
+}
+
+#list ul li a {
+	padding: 0 0 5px;
+	font-size: 24px;
+	color: #fff;
+	transition: all 0.2s ease-in 0.2s;
+}
+
+.overl{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:99;
+}
+
+.c{
+    border: medium solid black;
+    
+    
+    
+    
+}
+.cont
+{
+    padding-right: 300px;
+    padding-left: 300px;
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
+}
+@media (min-width:768px)
+{.cont{width:750px}
+}
+@media (min-width:992px)
+{.cont{width:970px}
+}
+@media (min-width:900px)
+{.cont{width:900px}
+}
+.cont-fluid
+{padding-right:12px;
+    padding-left:12px;
+    margin-right:auto;
+    margin-left:auto}
+.row{
+    width: 900px;
+}
+.k{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    
+}
+.k:hover {
+    color: #EB0000; /* Цвет ссылки при наведении */ 
+    text-decoration: underline; /* Добавляем подчёркивание */
+   }
